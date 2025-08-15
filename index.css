@@ -1,0 +1,475 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+}
+
+.header img {
+   
+}
+header h3 {
+    font-size: 24px;
+    color: #A30404;
+}
+
+header a {
+    text-decoration: none;
+    color: #736D66;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #A30404;
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 130px;
+}
+
+.content h1 {
+    font-size: 50px;
+    color: #A30404;
+}
+
+.content p {
+    font-size: 18px;
+    color: #736D66;
+    max-width: 500px;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+.content button {
+    padding: 20px 30px;
+    background-color: #A30404;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.content button:hover {
+    background-color: #B40505;
+}
+
+.glava {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.glava h1 {
+    font-size: 24px;
+    color: #A30404;
+}
+
+.glava p {
+    font-size: 16px;
+    color: #736D66;
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.df {
+    margin-top: 50px;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 9px;
+    background-color: #e8e5e0;
+    display: flex;
+    gap: 100px;
+    
+}
+.df img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    
+}
+.df-1,
+.df-2 img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    height: 250px;
+}
+.df-3 img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    height: 250px;
+}
+.df-4  img{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    height: 250px;
+    flex: 1;
+    text-align: center;
+}
+.df-1 a,
+.df-2 a,
+.df-3 a,
+.df-4 a {
+    text-decoration: none;
+    color: #A30404;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.qwe {
+    color: #A30404;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.qwe-1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+.qwe-1-content {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.qwe-1-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.qwe-1-content h2 {
+    font-size: 20px;
+    color: #A30404;
+    margin-top: 10px;
+}
+.qwe-1-content p {
+    font-size: 16px;
+    color: #736D66;
+    margin-top: 5px;
+}
+.qwe-2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #A30404;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.qwe-2-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 20px;
+}
+
+.qwe-2-content {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.qwe-2-content img {
+    width: 100%; /* как и в qwe-1-content, чтобы растягивалось на всю карточку */
+    height: auto;
+    border-radius: 5px;
+}
+.qwe-2-content h2 {
+    font-size: 20px;
+    color: #A30404;
+    margin-top: 10px;
+}
+.qwe-2-content p {
+    font-size: 16px;
+    color: #736D66;
+    margin-top: 5px;
+}
+.cakes {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #A30404;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.cakes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 20px; /* отступы между карточками */
+    margin-bottom: 30px;
+}
+
+.cake-card {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.cake-card h2 {
+    font-size: 20px;
+    color: #A30404;
+    margin-top: 10px;
+}
+.cake-card p {
+    font-size: 16px;
+    color: #736D66;
+    margin-top: 5px;
+}   
+.cake-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.flowers {
+    color: #A30404;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.flowers-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    gap: 20px; /* расстояние между карточками */
+    margin-bottom: 30px;
+}
+
+.flower-card {
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.flower-card h2 {
+    font-size: 20px;
+    color: #A30404;
+    margin-top: 10px;
+}
+.flower-card p {
+    font-size: 16px;
+    color: #736D66;
+    margin-top: 5px;
+}
+.flower-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.footer {
+    background-color: #CDC7BD;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-link {
+    color: #A30404;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff0000; 
+}
+
+.footer i {
+    font-size: 18px;
+}
+
+
+.qwe-1-content,
+.qwe-2-content,
+.cake-card,
+.flower-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.qwe-1-content:hover,
+.qwe-2-content:hover,
+.cake-card:hover,
+.flower-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+@media (max-width: 992px) {
+    .qwe-1,
+    .qwe-2-container,
+    .cakes-container,
+    .flowers-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        max-width: 90%;
+        font-size: 17px;
+    }
+
+    .content button {
+        padding: 18px 25px;
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 600px) {
+   
+    .qwe-1,
+    .qwe-2-container,
+    .cakes-container,
+    .flowers-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .df {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+
+    .content {
+        padding: 15px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        max-width: 95%;
+        font-size: 16px;
+    }
+
+    .content button {
+        padding: 15px 20px;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+
+   
+    header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+   
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-link {
+        font-size: 14px;
+    }
+
+    
+    .qwe-1-content img,
+    .qwe-2-content img,
+    .cake-card img,
+    .flower-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .qwe-1-content:hover,
+    .qwe-2-content:hover,
+    .cake-card:hover,
+    .flower-card:hover {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+}
+.footer {
+    background-color: #CDC7BD;
+    padding: 25px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-link {
+    color: #A30404;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #ff0000;
+}
+
+.footer i {
+    font-size: 18px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.catalog-button {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #A30404;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 50px;
+    transition: background-color 0.3s;
+}
+
+.catalog-button:hover {
+    background-color: #B40505;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
