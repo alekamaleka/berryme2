@@ -1,0 +1,26 @@
+@media (max-width: 425px) {
+    .df {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .qwe-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qwe-2-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .cakes-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .flowers-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

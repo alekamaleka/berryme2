@@ -7,7 +7,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    width: 100%;
 }
 
 header {
@@ -18,9 +18,44 @@ header {
     background-color: #f8f8f8;
 }
 
-.header img {
-   
+.header-icons {
+    display: flex;
+    gap: 20px;
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+
+
+
 header h3 {
     font-size: 24px;
     color: #A30404;
@@ -30,6 +65,31 @@ header a {
     text-decoration: none;
     color: #736D66;
     font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
 }
 
 header a:hover {
@@ -96,34 +156,37 @@ header a:hover {
 
 .df {
     margin-top: 50px;
-    display: inline-block;
     padding: 20px;
     border-radius: 9px;
     background-color: #e8e5e0;
     display: flex;
-    gap: 100px;
-    
+    gap: 20px;
+
 }
+
 .df img {
     width: 200px;
     height: auto;
     border-radius: 5px;
-    
+
 }
+
 .df-1,
-.df-2 img{
+.df-2 img {
     width: 200px;
     height: auto;
     border-radius: 5px;
     height: 250px;
 }
-.df-3 img{
+
+.df-3 img {
     width: 200px;
     height: auto;
     border-radius: 5px;
     height: 250px;
 }
-.df-4  img{
+
+.df-4 img {
     width: 200px;
     height: auto;
     border-radius: 5px;
@@ -131,6 +194,7 @@ header a:hover {
     flex: 1;
     text-align: center;
 }
+
 .df-1 a,
 .df-2 a,
 .df-3 a,
@@ -139,17 +203,20 @@ header a:hover {
     color: #A30404;
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
+
 .qwe {
     color: #A30404;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .qwe-1 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 20px; 
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .qwe-1-content {
@@ -157,21 +224,25 @@ header a:hover {
     border-radius: 5px;
     text-align: center;
 }
+
 .qwe-1-content img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
+
 .qwe-1-content h2 {
     font-size: 20px;
     color: #A30404;
     margin-top: 10px;
 }
+
 .qwe-1-content p {
     font-size: 16px;
     color: #736D66;
     margin-top: 5px;
 }
+
 .qwe-2 {
     text-align: center;
     margin-bottom: 20px;
@@ -179,9 +250,11 @@ header a:hover {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .qwe-2-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 карточки в ряд */
     gap: 20px;
 }
 
@@ -192,20 +265,24 @@ header a:hover {
 }
 
 .qwe-2-content img {
-    width: 100%; /* как и в qwe-1-content, чтобы растягивалось на всю карточку */
+    width: 100%;
+    /* как и в qwe-1-content, чтобы растягивалось на всю карточку */
     height: auto;
     border-radius: 5px;
 }
+
 .qwe-2-content h2 {
     font-size: 20px;
     color: #A30404;
     margin-top: 10px;
 }
+
 .qwe-2-content p {
     font-size: 16px;
     color: #736D66;
     margin-top: 5px;
 }
+
 .cakes {
     text-align: center;
     margin-bottom: 20px;
@@ -213,10 +290,13 @@ header a:hover {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
 .cakes-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
-    gap: 20px; /* отступы между карточками */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 карточки в ряд */
+    gap: 20px;
+    /* отступы между карточками */
     margin-bottom: 30px;
 }
 
@@ -225,31 +305,38 @@ header a:hover {
     border-radius: 5px;
     text-align: center;
 }
+
 .cake-card h2 {
     font-size: 20px;
     color: #A30404;
     margin-top: 10px;
 }
+
 .cake-card p {
     font-size: 16px;
     color: #736D66;
     margin-top: 5px;
-}   
+}
+
 .cake-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
+
 .flowers {
     color: #A30404;
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
 .flowers-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 карточки в ряд */
-    gap: 20px; /* расстояние между карточками */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 карточки в ряд */
+    gap: 20px;
+    /* расстояние между карточками */
     margin-bottom: 30px;
 }
 
@@ -258,21 +345,25 @@ header a:hover {
     border-radius: 5px;
     text-align: center;
 }
+
 .flower-card h2 {
     font-size: 20px;
     color: #A30404;
     margin-top: 10px;
 }
+
 .flower-card p {
     font-size: 16px;
     color: #736D66;
     margin-top: 5px;
 }
+
 .flower-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
+
 .footer {
     background-color: #CDC7BD;
     padding: 20px 0;
@@ -297,7 +388,7 @@ header a:hover {
 }
 
 .footer-link:hover {
-    color: #ff0000; 
+    color: #ff0000;
 }
 
 .footer i {
@@ -318,106 +409,10 @@ header a:hover {
 .cake-card:hover,
 .flower-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 
-@media (max-width: 992px) {
-    .qwe-1,
-    .qwe-2-container,
-    .cakes-container,
-    .flowers-container {
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px;
-    }
-
-    .content h1 {
-        font-size: 40px;
-    }
-
-    .content p {
-        max-width: 90%;
-        font-size: 17px;
-    }
-
-    .content button {
-        padding: 18px 25px;
-        font-size: 17px;
-    }
-}
-
-
-@media (max-width: 600px) {
-   
-    .qwe-1,
-    .qwe-2-container,
-    .cakes-container,
-    .flowers-container {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    .df {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-
-
-    .content {
-        padding: 15px;
-    }
-
-    .content h1 {
-        font-size: 28px;
-    }
-
-    .content p {
-        max-width: 95%;
-        font-size: 16px;
-    }
-
-    .content button {
-        padding: 15px 20px;
-        font-size: 16px;
-        border-radius: 15px;
-    }
-
-   
-    header {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center;
-    }
-
-   
-    .footer-container {
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    .footer-link {
-        font-size: 14px;
-    }
-
-    
-    .qwe-1-content img,
-    .qwe-2-content img,
-    .cake-card img,
-    .flower-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-    }
-    
-    .qwe-1-content:hover,
-    .qwe-2-content:hover,
-    .cake-card:hover,
-    .flower-card:hover {
-        transform: translateY(0);
-        box-shadow: none;
-    }
-}
 .footer {
     background-color: #CDC7BD;
     padding: 25px 0;
@@ -472,4 +467,65 @@ html {
     scroll-behavior: smooth;
 }
 
+.footer-container p {
+    color: #000000;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
 
+#search-input {
+    display: none;
+    position: fixed;
+    top: 140px;
+    /* ещё выше над Sweet Time */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #A30404;
+    outline: none;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+#search-input.show {
+    display: block;
+}
+
+.search-container {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#search-input {
+    display: none;
+    position: fixed;
+    top: 100px;
+    /* чуть выше Sweet Time */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #A30404;
+    outline: none;
+    font-size: 16px;
+    z-index: 1000;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#search-input.show {
+    display: block;
+    opacity: 1;
+}
